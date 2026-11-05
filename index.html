@@ -1,0 +1,2421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dr Aimen Zia Dental Clinic | Personalised Dental Care in Dubai</title>
+  <meta name="description" content="Discover personalised general, cosmetic and specialist dental care at Dr Aimen Zia Dental Clinic in Jumeirah Garden City, Dubai. Contact our team today.">
+  <meta name="theme-color" content="#171717">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #F15A24;
+      --primary-dark: #C94316;
+      --primary-light: #FFE3D5;
+      --charcoal: #171717;
+      --charcoal-dark: #090909;
+      --charcoal-light: #414141;
+      --accent: #D6A36D;
+
+      --heading: #191817;
+      --body: #514C47;
+      --muted: #827A73;
+
+      --background: #FFFCF9;
+      --background-alt: #F5F0EA;
+      --surface: #FFFFFF;
+      --surface-warm: #FFF0E8;
+      --border: #E8DED5;
+      --border-strong: #CFC1B6;
+
+      --font-heading: "Sora", sans-serif;
+      --font-body: "DM Sans", sans-serif;
+
+      --container: 1200px;
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+
+      --shadow-soft: 0 14px 45px rgba(23, 23, 23, 0.07);
+      --shadow-card: 0 8px 30px rgba(23, 23, 23, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--body);
+      background: var(--background);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .section-alt {
+      background: var(--background-alt);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      color: var(--heading);
+      line-height: 1.16;
+      letter-spacing: -0.045em;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 48px;
+    }
+
+    .section-heading.center {
+      text-align: center;
+      margin-inline: auto;
+    }
+
+    .section-heading.center .eyebrow {
+      justify-content: center;
+    }
+
+    .section-heading p {
+      max-width: 610px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .section-heading.center p {
+      margin-inline: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 14px 24px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .25s ease, background .25s ease, color .25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-dark {
+      color: #fff;
+      background: var(--charcoal);
+    }
+
+    .btn-dark:hover {
+      background: var(--charcoal-light);
+    }
+
+    .btn-outline {
+      color: var(--charcoal);
+      border-color: var(--border-strong);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .text-link span {
+      transition: transform .2s ease;
+    }
+
+    .text-link:hover span {
+      transform: translateX(4px);
+    }
+
+    /* Announcement strip */
+
+    .topbar {
+      background: var(--charcoal);
+      color: #fff;
+      padding: 9px 0;
+      font-size: 12px;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar p {
+      font-size: 12px;
+      color: rgba(255,255,255,.78);
+    }
+
+    .topbar a {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* Header */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,252,249,.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(232,222,213,.8);
+    }
+
+    .header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--charcoal);
+      letter-spacing: -.06em;
+    }
+
+    .brand-name span {
+      color: var(--primary);
+    }
+
+    .brand-caption {
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: 5px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .main-nav a {
+      color: var(--charcoal);
+      font-size: 13px;
+      font-weight: 600;
+      transition: color .2s ease;
+    }
+
+    .main-nav a:hover {
+      color: var(--primary-dark);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header-actions .btn {
+      min-height: 46px;
+      padding: 11px 18px;
+      font-size: 13px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--charcoal);
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      padding: 90px 0 82px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(241,90,36,.11), transparent 27%),
+        linear-gradient(135deg, #FFFCF9 0%, #FFF5EF 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 460px;
+      height: 460px;
+      right: -230px;
+      bottom: -250px;
+      border: 1px solid rgba(241,90,36,.15);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      max-width: 680px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 560px;
+      margin-top: 25px;
+      color: var(--body);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 34px;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 24px;
+      margin-top: 38px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--charcoal-light);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .trust-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-art {
+      width: 100%;
+      max-width: 510px;
+      min-height: 460px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      border-radius: 48% 48% 35% 35%;
+      background:
+        radial-gradient(circle at 50% 40%, #fff 0%, #F9D8C8 48%, #F2B99E 100%);
+      overflow: hidden;
+    }
+
+    .hero-art::before,
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(201,67,22,.2);
+      border-radius: 50%;
+    }
+
+    .hero-art::before {
+      width: 370px;
+      height: 370px;
+    }
+
+    .hero-art::after {
+      width: 440px;
+      height: 440px;
+    }
+
+    .hero-art-inner {
+      position: relative;
+      z-index: 1;
+      width: 75%;
+      max-width: 360px;
+      text-align: center;
+    }
+
+    .hero-art-inner .tooth-symbol {
+      width: 150px;
+      height: 170px;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 18px 20px rgba(23,23,23,.1));
+    }
+
+    .hero-art-inner p {
+      color: var(--charcoal);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .hero-art-inner small {
+      display: block;
+      color: var(--charcoal-light);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .floating-note {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 215px;
+      padding: 15px 18px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .floating-note.one {
+      top: 65px;
+      left: -10px;
+    }
+
+    .floating-note.two {
+      bottom: 55px;
+      right: -5px;
+    }
+
+    .note-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .floating-note strong {
+      display: block;
+      color: var(--charcoal);
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
+    .floating-note small {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    /* Trust strip */
+
+    .trust-strip {
+      background: var(--charcoal);
+      padding: 24px 0;
+    }
+
+    .trust-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .trust-strip-item {
+      text-align: center;
+      padding: 8px 15px;
+      border-right: 1px solid rgba(255,255,255,.16);
+    }
+
+    .trust-strip-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-strip-item strong {
+      display: block;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .trust-strip-item span {
+      display: block;
+      color: rgba(255,255,255,.65);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    /* Intro */
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: 75px;
+    }
+
+    .intro-visual {
+      position: relative;
+      min-height: 430px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: linear-gradient(145deg, #F7D7C8, #F3B99E);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro-visual::before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(201,67,22,.25);
+      border-radius: 50%;
+    }
+
+    .intro-visual-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .intro-visual-inner strong {
+      display: block;
+      color: var(--charcoal);
+      font-family: var(--font-heading);
+      font-size: 34px;
+      line-height: 1.2;
+      max-width: 260px;
+    }
+
+    .intro-visual-inner span {
+      display: block;
+      margin-top: 12px;
+      color: var(--charcoal-light);
+      font-size: 13px;
+    }
+
+    .intro-content p {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .intro-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .intro-point {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .intro-point strong {
+      display: block;
+      color: var(--charcoal);
+      font-family: var(--font-heading);
+      font-size: 14px;
+    }
+
+    .intro-point span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    /* Services */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: #fff;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(241,90,36,.45);
+      box-shadow: var(--shadow-card);
+    }
+
+    .service-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--surface-warm);
+      margin-bottom: 23px;
+    }
+
+    .service-icon svg {
+      width: 34px;
+      height: 34px;
+      stroke: var(--primary-dark);
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card p {
+      margin: 13px 0 19px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .service-card .text-link {
+      font-size: 13px;
+    }
+
+    .service-note {
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    /* Specialist care */
+
+    .specialist-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+      padding: 55px;
+      border-radius: var(--radius-lg);
+      background: var(--charcoal);
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .specialist-panel::after {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      right: -160px;
+      top: -170px;
+      border: 1px solid rgba(241,90,36,.35);
+      border-radius: 50%;
+    }
+
+    .specialist-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .specialist-content .eyebrow {
+      color: #FF9C76;
+    }
+
+    .specialist-content h2 {
+      color: #fff;
+    }
+
+    .specialist-content p {
+      color: rgba(255,255,255,.72);
+      margin-top: 20px;
+    }
+
+    .specialist-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    .specialist-list li {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255,255,255,.88);
+      font-size: 14px;
+    }
+
+    .specialist-list li::before {
+      content: "✓";
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(241,90,36,.2);
+      color: #FF9C76;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .specialist-art {
+      position: relative;
+      z-index: 1;
+      min-height: 340px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.02));
+    }
+
+    .specialist-art-inner {
+      width: 80%;
+      text-align: center;
+    }
+
+    .specialist-art-inner strong {
+      display: block;
+      color: #fff;
+      font-family: var(--font-heading);
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    .specialist-art-inner span {
+      display: block;
+      color: #FFB08E;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    /* Why choose us */
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .benefit-card {
+      padding: 27px;
+      border-radius: var(--radius-md);
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .benefit-number {
+      color: var(--primary);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .benefit-card h3 {
+      margin-top: 18px;
+      font-size: 21px;
+    }
+
+    .benefit-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    /* Doctor */
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .doctor-visual {
+      min-height: 420px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, #F7D7C8, #F2B99E);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 35px;
+    }
+
+    .doctor-placeholder {
+      max-width: 280px;
+    }
+
+    .doctor-placeholder strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 29px;
+      line-height: 1.3;
+      color: var(--charcoal);
+    }
+
+    .doctor-placeholder span {
+      display: block;
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--charcoal-light);
+    }
+
+    .doctor-content p {
+      color: var(--muted);
+      margin-top: 19px;
+    }
+
+    .doctor-credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .credential {
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--charcoal-light);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Process */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      padding: 28px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+
+    .process-step {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--primary);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    .process-card p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta-section {
+      padding: 85px 0;
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .cta-inner h2 {
+      max-width: 690px;
+      color: #fff;
+    }
+
+    .cta-inner p {
+      color: rgba(255,255,255,.86);
+      margin-top: 13px;
+      max-width: 620px;
+    }
+
+    .cta-inner .btn {
+      flex-shrink: 0;
+      color: var(--charcoal);
+      background: #fff;
+    }
+
+    .cta-inner .btn:hover {
+      background: #FFF0E8;
+    }
+
+    /* FAQ */
+
+    .faq-list {
+      max-width: 850px;
+      margin: 0 auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 21px 24px;
+      background: transparent;
+      border: 0;
+      color: var(--charcoal);
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      color: var(--primary);
+      font-size: 22px;
+      transition: transform .2s ease;
+    }
+
+    .faq-item.active .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Contact */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 55px;
+    }
+
+    .contact-content p {
+      margin-top: 17px;
+      color: var(--muted);
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .contact-detail-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--charcoal);
+      font-size: 13px;
+    }
+
+    .contact-detail a,
+    .contact-detail span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card {
+      padding: 36px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+    }
+
+    .contact-card h3 {
+      font-size: 25px;
+    }
+
+    .contact-card p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-card-actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .contact-card-actions .btn {
+      width: 100%;
+    }
+
+    .availability-note {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: var(--surface-warm);
+      color: var(--charcoal-light);
+      font-size: 12px;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 65px 0 25px;
+      background: var(--charcoal-dark);
+      color: #fff;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr .8fr 1fr;
+      gap: 45px;
+      padding-bottom: 45px;
+    }
+
+    .footer-brand .brand-name {
+      color: #fff;
+    }
+
+    .footer-brand p {
+      max-width: 300px;
+      margin-top: 18px;
+      color: rgba(255,255,255,.58);
+      font-size: 13px;
+    }
+
+    .footer-column h4 {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 20px;
+      letter-spacing: 0;
+    }
+
+    .footer-column a {
+      display: block;
+      margin: 11px 0;
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+      transition: color .2s ease;
+    }
+
+    .footer-column a:hover {
+      color: #FF9C76;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.13);
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,.45);
+      font-size: 11px;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+    }
+
+    .footer-social a {
+      color: rgba(255,255,255,.68);
+      font-size: 12px;
+    }
+
+    /* Mobile fixed CTAs */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Accessibility and responsive */
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--charcoal);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 1050px) {
+      .main-nav {
+        gap: 16px;
+      }
+
+      .main-nav a {
+        font-size: 12px;
+      }
+
+      .header-actions .btn {
+        padding-inline: 13px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .specialist-panel {
+        padding: 40px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .section {
+        padding: 78px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-nav {
+        position: fixed;
+        top: 88px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 22px 28px 120px;
+        background: var(--background);
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        overflow-y: auto;
+      }
+
+      .main-nav.open {
+        transform: translateX(0);
+      }
+
+      .main-nav a {
+        padding: 17px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 16px;
+      }
+
+      .header-actions .btn {
+        display: none;
+      }
+
+      .hero-grid,
+      .intro-grid,
+      .doctor-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        max-width: 760px;
+      }
+
+      .hero-visual {
+        min-height: 430px;
+      }
+
+      .hero-art {
+        min-height: 400px;
+        max-width: 480px;
+      }
+
+      .intro-grid,
+      .doctor-grid {
+        gap: 38px;
+      }
+
+      .intro-visual,
+      .doctor-visual {
+        min-height: 350px;
+      }
+
+      .specialist-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .specialist-art {
+        min-height: 250px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 1100;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 12px 15px calc(12px + env(safe-area-inset-bottom));
+        background: rgba(255,252,249,.97);
+        border-top: 1px solid var(--border);
+        backdrop-filter: blur(12px);
+      }
+
+      .mobile-cta .btn {
+        min-height: 48px;
+        padding: 10px;
+        font-size: 13px;
+      }
+
+      body {
+        padding-bottom: 78px;
+      }
+
+      .site-footer {
+        padding-bottom: 35px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 36px, var(--container));
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-inner p:last-child {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 76px;
+      }
+
+      .main-nav {
+        top: 76px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .hero {
+        padding: 65px 0 50px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-trust {
+        gap: 13px;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+
+      .hero-art {
+        min-height: 330px;
+        border-radius: 45% 45% 30% 30%;
+      }
+
+      .hero-art-inner .tooth-symbol {
+        width: 105px;
+        height: 120px;
+      }
+
+      .hero-art-inner p {
+        font-size: 16px;
+      }
+
+      .floating-note {
+        padding: 10px 12px;
+        max-width: 175px;
+      }
+
+      .floating-note.one {
+        top: 24px;
+        left: -5px;
+      }
+
+      .floating-note.two {
+        bottom: 20px;
+        right: -4px;
+      }
+
+      .note-mark {
+        width: 30px;
+        height: 30px;
+      }
+
+      .trust-strip-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .trust-strip-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.14);
+        padding: 13px;
+      }
+
+      .trust-strip-item:last-child {
+        border-bottom: 0;
+      }
+
+      .intro-points {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 25px;
+      }
+
+      .specialist-panel {
+        padding: 28px 23px;
+      }
+
+      .benefits-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .cta-section {
+        padding: 65px 0;
+      }
+
+      .faq-question {
+        padding: 18px;
+        font-size: 14px;
+      }
+
+      .faq-answer {
+        padding: 0 18px 19px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top announcement -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p>Personalised dental care in Jumeirah Garden City, Dubai</p>
+      <p>Speak with our team: <a href="tel:+971505215971">+971 50 521 5971</a></p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="brand" aria-label="Dr Aimen Zia Dental Clinic home">
+        <span class="brand-name">DR AIMEN ZIA <span>DENTAL</span></span>
+        <span class="brand-caption">Personalised dental care</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Treatments</a>
+        <a href="#specialist-care">Specialist Care</a>
+        <a href="#doctor">Our Dentist</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary" href="#contact">Request an Appointment</a>
+      </div>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >☰</button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <span class="eyebrow">Thoughtful dentistry in Dubai</span>
+
+          <h1>
+            A healthier smile starts with
+            <span>personalised care.</span>
+          </h1>
+
+          <p class="hero-description">
+            From everyday dental care to advanced cosmetic and specialist
+            treatments, discover a considered approach to your oral health
+            at Dr Aimen Zia Dental Clinic in Dubai.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Request an Appointment <span>→</span>
+            </a>
+
+            <a href="tel:+971505215971" class="btn btn-outline">
+              Call Our Clinic
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              DHA-certified dental care
+            </div>
+
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              Multispecialty team
+            </div>
+
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              Guided Biofilm Therapy
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustration representing modern dental care">
+          <div class="hero-art">
+            <div class="hero-art-inner">
+
+              <svg class="tooth-symbol" viewBox="0 0 150 170" aria-hidden="true">
+                <path d="M75 19
+                  C55 3 20 14 19 52
+                  C18 79 32 101 42 137
+                  C48 159 59 165 67 145
+                  L75 119
+                  L83 145
+                  C91 165 102 159 108 137
+                  C118 101 132 79 131 52
+                  C130 14 95 3 75 19Z"
+                  fill="#FFFFFF" stroke="#C94316" stroke-width="3"/>
+                <path d="M45 45 C55 29 67 28 75 35 C83 28 95 29 105 45"
+                  fill="none" stroke="#F15A24" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+
+              <p>Care that puts your smile first.</p>
+              <small>General · Cosmetic · Specialist Dentistry</small>
+            </div>
+          </div>
+
+          <div class="floating-note one">
+            <span class="note-mark">01</span>
+            <div>
+              <strong>Personalised approach</strong>
+              <small>Care shaped around your needs</small>
+            </div>
+          </div>
+
+          <div class="floating-note two">
+            <span class="note-mark">02</span>
+            <div>
+              <strong>Specialist expertise</strong>
+              <small>Multiple treatment disciplines</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="Clinic highlights">
+      <div class="container trust-strip-grid">
+
+        <div class="trust-strip-item">
+          <strong>Caring for Smiles Since 2018</strong>
+          <span>Established dental care in Dubai</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <strong>Multispecialty Dental Team</strong>
+          <span>Different areas of dental expertise</span>
+        </div>
+
+        <div class="trust-strip-item">
+          <strong>Advanced Treatment Options</strong>
+          <span>Modern approaches to oral health</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container intro-grid">
+
+        <div class="intro-visual">
+          <div class="intro-visual-inner">
+            <strong>More than a dental appointment.</strong>
+            <span>A thoughtful experience at every stage of care.</span>
+          </div>
+        </div>
+
+        <div class="intro-content">
+          <span class="eyebrow">About our clinic</span>
+
+          <h2>Dental care built around people, not just procedures.</h2>
+
+          <p>
+            Dr Aimen Zia Dental Clinic provides general, cosmetic and
+            specialist dental services in Jumeirah Garden City, Dubai.
+            Led by Dr Aimen Zia, the clinic brings together a team with
+            different areas of dental expertise.
+          </p>
+
+          <p>
+            Whether you are visiting for a routine check-up, considering
+            a smile transformation or exploring a more complex treatment,
+            our approach starts with understanding your needs and discussing
+            suitable options.
+          </p>
+
+          <div class="intro-points">
+            <div class="intro-point">
+              <strong>Individual attention</strong>
+              <span>Treatment discussions centred on your needs.</span>
+            </div>
+
+            <div class="intro-point">
+              <strong>Different specialties</strong>
+              <span>Access to a range of dental treatment disciplines.</span>
+            </div>
+
+            <div class="intro-point">
+              <strong>Modern techniques</strong>
+              <span>Contemporary approaches to dental care.</span>
+            </div>
+
+            <div class="intro-point">
+              <strong>Clear communication</strong>
+              <span>Understand your options before proceeding.</span>
+            </div>
+          </div>
+
+          <div style="margin-top:30px">
+            <a href="#doctor" class="text-link">Meet our dental team <span>→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">Our treatments</span>
+          <h2>Dental services for every stage of your smile.</h2>
+          <p>
+            Explore our main treatment areas and find the type of dental
+            care that matches your needs.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Icon 1 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M20 5 C13 1 5 7 7 18 C8 25 12 29 15 35 C17 38 19 32 20 27 C21 32 23 38 25 35 C28 29 32 25 33 18 C35 7 27 1 20 5Z"/>
+                <path d="M13 15 C15 12 17 12 20 14 C23 12 25 12 27 15"/>
+              </svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>
+              Support your everyday oral health with check-ups, consultations,
+              teeth cleaning, fillings and root canal treatment.
+            </p>
+            <a href="https://draimenziadentalclinic.ae/our-services/" class="text-link">
+              Explore services <span>→</span>
+            </a>
+          </article>
+
+          <!-- Icon 2 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M5 23 C11 15 29 15 35 23"/>
+                <path d="M8 25 C12 31 28 31 32 25"/>
+                <path d="M13 19 L13 25 M20 17 L20 27 M27 19 L27 25"/>
+                <path d="M12 8 C15 5 18 5 20 8 C22 5 25 5 28 8"/>
+              </svg>
+            </div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>
+              Explore veneers, teeth whitening and smile makeover options
+              designed around your individual goals.
+            </p>
+            <a href="https://draimenziadentalclinic.ae/our-services/" class="text-link">
+              Explore services <span>→</span>
+            </a>
+          </article>
+
+          <!-- Icon 3 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="20" cy="13" r="7"/>
+                <path d="M8 34 C8 26 13 22 20 22 C27 22 32 26 32 34"/>
+                <path d="M27 9 L31 5 M29 14 L35 14"/>
+              </svg>
+            </div>
+            <h3>Specialist Dentistry</h3>
+            <p>
+              Access specialist treatment options, including oral and
+              maxillofacial surgical care and implant-related procedures.
+            </p>
+            <a href="#specialist-care" class="text-link">
+              Discover specialist care <span>→</span>
+            </a>
+          </article>
+
+          <!-- Icon 4 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M7 9 H33 V29 H7 Z"/>
+                <path d="M12 15 H28 M12 20 H24 M12 25 H21"/>
+                <path d="M15 34 H25"/>
+                <path d="M20 29 V34"/>
+              </svg>
+            </div>
+            <h3>Orthodontics</h3>
+            <p>
+              Discuss teeth alignment and Invisalign treatment options
+              with the dental team.
+            </p>
+            <a href="https://draimenziadentalclinic.ae/our-services/" class="text-link">
+              Explore services <span>→</span>
+            </a>
+          </article>
+
+          <!-- Icon 5 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M8 8 H32 V32 H8 Z"/>
+                <path d="M14 20 L18 24 L27 15"/>
+                <path d="M14 4 V8 M26 4 V8"/>
+              </svg>
+            </div>
+            <h3>Preventive Care</h3>
+            <p>
+              Maintain your oral hygiene with professional cleaning,
+              gum care and Guided Biofilm Therapy.
+            </p>
+            <a href="https://draimenziadentalclinic.ae/our-services/" class="text-link">
+              Explore services <span>→</span>
+            </a>
+          </article>
+
+          <!-- Icon 6 -->
+          <article class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 40 40" aria-hidden="true">
+                <path d="M20 5 C12 5 7 11 7 19 C7 27 13 34 20 35 C27 34 33 27 33 19 C33 11 28 5 20 5Z"/>
+                <path d="M20 12 V26 M13 19 H27"/>
+                <path d="M29 7 L33 3"/>
+              </svg>
+            </div>
+            <h3>Family Dentistry</h3>
+            <p>
+              Dental care options for different ages, including
+              children's dentistry and consultations.
+            </p>
+            <a href="https://draimenziadentalclinic.ae/our-services/" class="text-link">
+              Explore services <span>→</span>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="service-note">
+          <a href="https://draimenziadentalclinic.ae/our-services/" class="btn btn-outline">
+            View All Dental Services
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Specialist care -->
+    <section class="section" id="specialist-care">
+      <div class="container">
+
+        <div class="specialist-panel">
+
+          <div class="specialist-content">
+            <span class="eyebrow">Specialist expertise</span>
+
+            <h2>More coordinated care for complex dental needs.</h2>
+
+            <p>
+              Some dental concerns need a more specialised approach.
+              The clinic's multispecialty team includes oral and
+              maxillofacial surgical expertise, alongside other
+              dental treatment disciplines.
+            </p>
+
+            <ul class="specialist-list">
+              <li>Oral and maxillofacial surgical consultations</li>
+              <li>Dental implant treatment options</li>
+              <li>Tooth extraction and related procedures</li>
+              <li>Bone grafting and sinus lift procedures</li>
+              <li>Restorative and prosthodontic treatment options</li>
+            </ul>
+
+            <div style="margin-top:30px">
+              <a href="#contact" class="btn btn-primary">
+                Discuss Your Dental Needs
+              </a>
+            </div>
+          </div>
+
+          <div class="specialist-art">
+            <div class="specialist-art-inner">
+              <strong>Different expertise.<br>One considered approach.</strong>
+              <span>Specialist dental care in Dubai</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">The clinic experience</span>
+          <h2>What makes our approach different?</h2>
+          <p>
+            Dental care should feel informed, considered and focused
+            on what matters to each patient.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+
+          <article class="benefit-card">
+            <span class="benefit-number">01 / PERSONAL CARE</span>
+            <h3>Care shaped around you</h3>
+            <p>
+              Treatment discussions begin with your concerns, dental
+              needs and the options available to you.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-number">02 / MULTISPECIALTY TEAM</span>
+            <h3>Different areas of expertise</h3>
+            <p>
+              The clinic brings together multiple dental disciplines,
+              including oral and maxillofacial surgical expertise.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-number">03 / MODERN APPROACH</span>
+            <h3>Contemporary treatment options</h3>
+            <p>
+              From Invisalign to Guided Biofilm Therapy, explore
+              available approaches to dental treatment and hygiene.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Doctor -->
+    <section class="section" id="doctor">
+      <div class="container doctor-grid">
+
+        <div class="doctor-visual">
+          <div class="doctor-placeholder">
+            <strong>Dr Aimen Zia</strong>
+            <span>General, Cosmetic and Paediatric Dentist</span>
+          </div>
+        </div>
+
+        <div class="doctor-content">
+          <span class="eyebrow">Meet your dentist</span>
+
+          <h2>Led by Dr Aimen Zia.</h2>
+
+          <p>
+            Dr Aimen Zia leads the clinic's approach to general,
+            cosmetic and paediatric dental care. The clinic also
+            works with a multispecialty team to provide a wider
+            range of dental treatment options.
+          </p>
+
+          <p>
+            The focus is on understanding each patient's concerns,
+            explaining suitable treatment choices and helping them
+            make informed decisions about their oral health.
+          </p>
+
+          <div class="doctor-credentials">
+            <span class="credential">DHA-certified dentist</span>
+            <span class="credential">Cosmetic dentistry</span>
+            <span class="credential">Paediatric dentistry</span>
+          </div>
+
+          <div style="margin-top:30px">
+            <a href="https://draimenziadentalclinic.ae/dr-aimen-zia/" class="btn btn-dark">
+              Learn More About Dr Aimen
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">Your next steps</span>
+          <h2>Getting started can be simple.</h2>
+          <p>
+            A clear process helps you understand what happens
+            before your dental treatment begins.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <div class="process-step">01</div>
+            <h3>Get in touch</h3>
+            <p>
+              Call or message the clinic to discuss your needs
+              and request an appointment.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-step">02</div>
+            <h3>Discuss your concerns</h3>
+            <p>
+              Speak with the dental team about your concerns,
+              consultation needs and possible treatment options.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-step">03</div>
+            <h3>Explore your options</h3>
+            <p>
+              Understand the recommended next steps and make
+              an informed decision about your care.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to take the next step towards a healthier smile?</h2>
+          <p>
+            Contact Dr Aimen Zia Dental Clinic to discuss your
+            dental needs and request an appointment.
+          </p>
+        </div>
+
+        <a href="https://wa.me/971505215971" class="btn">
+          Message Our Team →
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section" id="faq">
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2>Helpful information before your visit.</h2>
+          <p>
+            A few answers to help you understand the clinic
+            and its dental services.
+          </p>
+        </div>
+
+        <div class="faq-list">
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Where is Dr Aimen Zia Dental Clinic located?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              The clinic is located at BQ Residences, Jumeirah Garden City,
+              23rd Street, Al Satwa, Dubai, UAE.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What dental treatments are available?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              The clinic lists general, cosmetic, preventive, orthodontic,
+              paediatric and specialist dental treatment options. Contact
+              the clinic to discuss the service relevant to your needs.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Can I ask about Invisalign treatment?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. Invisalign is among the treatment options promoted by
+              the clinic. Contact the team to discuss suitability and
+              arrange a consultation.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Does the clinic offer dental implant treatment?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Dental implant and related specialist procedures are listed
+              among the clinic's services. A consultation is needed to
+              discuss your individual needs and treatment suitability.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How can I request a dental appointment?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              You can call the clinic on +971 50 521 5971 or send a
+              WhatsApp message to discuss your preferred appointment.
+              The team can confirm available times.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What should I do if I need urgent dental attention?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Call the clinic on +971 50 521 5971 to discuss the situation
+              and confirm the current emergency response arrangements.
+              If you have a serious medical emergency, contact local
+              emergency services.
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-content">
+          <span class="eyebrow">Contact our clinic</span>
+
+          <h2>Let's talk about your dental needs.</h2>
+
+          <p>
+            Whether you are considering a routine check-up, cosmetic
+            treatment or specialist dental care, our team can help
+            you understand the next step.
+          </p>
+
+          <div class="contact-details">
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">P</div>
+              <div>
+                <strong>Call the clinic</strong>
+                <a href="tel:+971505215971">+971 50 521 5971</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">W</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/971505215971">Message our team</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">E</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@draimenziadentalclinic.ae">
+                  info@draimenziadentalclinic.ae
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-mark">L</div>
+              <div>
+                <strong>Clinic address</strong>
+                <span>
+                  BQ Residences, Jumeirah Garden City,
+                  23rd Street, Al Satwa, Dubai, UAE
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top:28px">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=BQ+Residences+Jumeirah+Garden+City+23rd+Street+Al+Satwa+Dubai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link"
+            >
+              Find the clinic on Google Maps <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <span class="eyebrow">Appointment enquiries</span>
+          <h3>How can we help you?</h3>
+          <p>
+            Choose the most convenient way to contact the clinic.
+            Our team can help you discuss the service you need
+            and confirm appointment availability.
+          </p>
+
+          <div class="contact-card-actions">
+            <a href="https://draimenziadentalclinic.ae/contact-us/" class="btn btn-primary">
+              Visit Appointment Page
+            </a>
+
+            <a href="https://wa.me/971505215971" class="btn btn-dark">
+              Continue on WhatsApp
+            </a>
+
+            <a href="tel:+971505215971" class="btn btn-outline">
+              Call +971 50 521 5971
+            </a>
+          </div>
+
+          <div class="availability-note">
+            <strong>Need urgent dental attention?</strong>
+            Please call the clinic to confirm current emergency
+            response availability. Routine appointment hours and
+            emergency arrangements should be confirmed directly
+            with the clinic.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-name">DR AIMEN ZIA <span>DENTAL</span></span>
+            <span class="brand-caption">Personalised dental care</span>
+          </a>
+
+          <p>
+            General, cosmetic and specialist dental care
+            in Jumeirah Garden City, Dubai.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <a href="#about">About the Clinic</a>
+          <a href="#doctor">Our Dentist</a>
+          <a href="#services">Dental Services</a>
+          <a href="#specialist-care">Specialist Care</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Popular Treatments</h4>
+          <a href="https://draimenziadentalclinic.ae/our-services/">Cosmetic Dentistry</a>
+          <a href="https://draimenziadentalclinic.ae/our-services/">Dental Implants</a>
+          <a href="https://draimenziadentalclinic.ae/our-services/">Invisalign</a>
+          <a href="https://draimenziadentalclinic.ae/our-services/">Teeth Whitening</a>
+          <a href="https://draimenziadentalclinic.ae/our-services/">General Dentistry</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Get in Touch</h4>
+          <a href="tel:+971505215971">+971 50 521 5971</a>
+          <a href="mailto:info@draimenziadentalclinic.ae">Email the Clinic</a>
+          <a href="https://wa.me/971505215971">WhatsApp</a>
+          <a href="https://draimenziadentalclinic.ae/contact-us/">Appointment Enquiries</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Dr Aimen Zia Dental Clinic. All rights reserved.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/draimenzia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/draimenziadentalclinic" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.linkedin.com/in/dr-aimen-zia-dental-clinic-037069349/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile actions -->
+  <div class="mobile-cta" aria-label="Quick contact options">
+    <a href="tel:+971505215971" class="btn btn-dark">Call Clinic</a>
+    <a href="https://wa.me/971505215971" class="btn btn-primary">WhatsApp</a>
+  </div>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    function closeMenu() {
+      mainNav.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.textContent = "☰";
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 850) {
+        closeMenu();
+      }
+    });
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const isActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(otherItem => {
+          otherItem.classList.remove("active");
+          otherItem.querySelector(".faq-question").setAttribute(
+            "aria-expanded",
+            "false"
+          );
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    // Dynamic copyright year
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
